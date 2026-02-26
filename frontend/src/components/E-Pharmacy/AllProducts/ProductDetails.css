@@ -1,0 +1,302 @@
+/* Base layout and structure */
+.product-details-page {
+  display: flex;
+  padding: 30px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 18%;
+  background-color: #26113a;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar:hover {
+  transform: translateX(10px);
+}
+
+.sidebar h3 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sidebar .MuiFormControl-root {
+  margin-bottom: 25px;
+}
+
+.sidebar .MuiInputLabel-root {
+  color: #fff !important;
+}
+
+.sidebar .MuiSelect-root {
+  color: white;
+  border-radius: 8px;
+  background-color: #5e1c8b;
+}
+
+.sidebar .MuiSelect-icon {
+  color: #fff;
+}
+
+.text-color {
+  color: white;
+}
+
+/* Products List Layout */
+.products-list {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: flex-start;
+}
+
+/* Individual Product Card */
+.product-card {
+  width: 100%;
+  max-width: 320px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+/* Typography for Product Details */
+.product-price {
+  color: #260f62;
+  font-weight: bold;
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.product-description {
+  margin: 15px 0;
+  color: #777;
+  font-size: 0.95rem;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Ratings Styling */
+.ratings {
+  margin: 10px 0;
+  display: flex;
+  color: #ffcc00;
+}
+
+.ratings svg {
+  margin-right: 5px;
+}
+
+/* Price Container */
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mrp-price {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.best-price {
+  color: #260f62;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+  width: 100%;
+  background-color: #260f62;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #5a1d95;
+}
+
+/* Small Screens and Responsiveness */
+@media (max-width: 600px) {
+  .product-details-page {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .products-list {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .product-card {
+    max-width: 100%;
+  }
+}
+
+/* Add this to your ProductDetails.css */
+
+/* Price Section */
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.striked-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.product-price {
+  color: #260f62;
+  font-weight: bold;
+}
+
+/* Product Rating */
+.product-rating {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+.product-details-page {
+  display: flex;
+  margin: 20px;
+}
+
+
+
+.sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.products-list {
+  width: 70%; /* Make products list occupy the remaining space */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-card {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-10px); /* Hover effect for product cards */
+}
+
+.product-image {
+  width: 100%;
+    height: auto;
+    border-radius: 8px;
+    position: relative;
+    top: 25px;
+    left: 30px;
+    margin-bottom: 22px;
+}
+
+.product-price {
+  color: #ff6347; /* A color to highlight price */
+  font-weight: bold;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #2e8b57; /* Button color */
+  color: white;
+  text-transform: uppercase;
+}
+
+.add-to-cart-button:hover {
+  background-color: #3cb371; /* Hover effect for the button */
+}
+
+@media (max-width: 768px) {
+  .product-details-page {
+    flex-direction: column; /* Stack the sidebar and products on smaller screens */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width for sidebar on mobile */
+    margin-bottom: 20px;
+  }
+
+  .products-list {
+    width: 100%; /* Full width for products list on mobile */
+  }
+}
+
+.css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-w76bbz-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding-right: 32px;
+  color: white;
+}
+
+.css-1lt5qva-MuiCardContent-root:last-child {
+  padding-bottom: 24px;
+  padding: 29px 29px;
+}
+
+
+.css-1miy0lu-MuiTypography-root {
+    margin: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    padding: 9px 0px;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+  background-color: purple;
+  margin: 22px 0px;
+  border-radius: 8px;
+}

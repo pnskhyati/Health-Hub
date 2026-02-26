@@ -1,0 +1,181 @@
+/* CartPage.css */
+.cart-page {
+  background-color: #08031f; /* Primary background color */
+  color: #ffffff; /* Text color for contrast */
+  font-family: 'Poppins', sans-serif; /* Modern, elegant font */
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+p {
+  text-align: center;
+  font-size: 22px;
+  color: #ba6969;
+}
+
+h2 {
+  font-size: 2.8rem; /* Larger and more attention-grabbing */
+  font-weight: 700; /* Bold weight for prominence */
+  margin-bottom: 20px;
+  color: #F2EAFF; /* Soft, glowing text effect */
+  text-shadow: 0 3px 10px rgba(242, 234, 255, 0.6); /* Elegant glow */
+}
+
+.cart-items {
+  width: 90%;
+  max-width: 800px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #32246e; /* Slightly lighter card background */
+  border: 2px solid #4b42a1; /* Accent border */
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6); /* Elevated hover effect */
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cart-item-info {
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-item-name {
+  font-size: 1.4rem; /* Slightly larger */
+  font-weight: 600; /* Semi-bold */
+  color: #FFFFFF; /* Crisp white for text */
+  text-shadow: 0 2px 8px rgba(255, 255, 255, 0.3); /* Subtle glow effect */
+}
+
+.cart-item-price {
+  font-size: 1.2rem; /* Increased size for emphasis */
+  color: #B3B3FF; /* Soft accent for price */
+  font-weight: 500;
+}
+
+.cart-item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem; /* Keep label text simple */
+  color: #F2EAFF;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.quantity-button {
+  background-color: #4B42A1; /* Accent button color */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 1.2rem; /* Larger button text */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.quantity-button:hover {
+  background-color: #6750A4; /* Lighter hover effect */
+  transform: scale(1.1); /* Subtle scaling effect */
+}
+
+.quantity-display {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 0 1px 5px rgba(255, 255, 255, 0.2); /* Slight glow */
+}
+
+.remove-item-button {
+  background-color: #4B42A1;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase; /* Makes it standout */
+}
+
+.remove-item-button:hover {
+  background-color: #6750A4;
+  transform: translateY(-2px);
+}
+
+.cart-summary {
+  background-color: #32246E;
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #4B42A1;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.cart-summary h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700; /* Bold and modern */
+  color: #F2EAFF; /* Glowing text color */
+  text-shadow: 0 3px 10px rgba(242, 234, 255, 0.6);
+}
+
+.cart-summary p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #B3B3FF; /* Subtle and soft */
+  font-weight: 500;
+}
+
+.checkout-button {
+  background-color: #4B42A1;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1.2px; /* Stylish spacing for button text */
+}
+
+.checkout-button:hover {
+  background-color: #6750A4;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(103, 80, 164, 0.8); /* Glow effect for hover */
+}

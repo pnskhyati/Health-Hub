@@ -1,0 +1,141 @@
+/* General Styles for Medical Records */
+.medical-records {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9ff;
+  color: #260f62;
+}
+
+.medical-records h1, .medical-records h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.medical-records h1 {
+  font-size: 2.5rem;
+  color: #260f62;
+}
+
+.medical-records h2 {
+  font-size: 2rem;
+  color: #3e1b9d;
+}
+
+/* App Container */
+.medical-records-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Form Styles */
+.medical-records-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(38, 15, 98, 0.2);
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.medical-records-input,
+.medical-records-textarea,
+.medical-records-button {
+  width: calc(100% - 20px);
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+}
+
+.medical-records-textarea {
+  resize: none;
+  height: 100px;
+}
+
+.medical-records-input[type="file"] {
+  border: none;
+}
+
+.medical-records-button {
+  background-color: #260f62;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.medical-records-button:hover {
+  background-color: #3e1b9d;
+  transform: scale(1.05);
+}
+
+.medical-records-button:active {
+  transform: scale(1);
+}
+
+/* Records Section */
+.medical-records-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.medical-records-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(38, 15, 98, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.medical-records-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 25px rgba(38, 15, 98, 0.25);
+}
+
+.medical-records-item h3 {
+  color: #260f62;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.medical-records-item p {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.medical-records-item h4 {
+  font-size: 1.1rem;
+  color: #3e1b9d;
+  margin: 10px 0 5px;
+}
+
+.medical-records-item a {
+  color: #260f62;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.medical-records-item a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .medical-records-form {
+    width: 90%;
+  }
+
+  .medical-records-item {
+    width: 90%;
+  }
+}

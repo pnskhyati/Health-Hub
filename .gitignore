@@ -1,0 +1,10 @@
+node_modules/
+.env
+venv/
+
+# Checkpoint / large model files
+*.ckpt
+70.ckpt
+
+# Optional: ignore all ckpt in subfolders too
+**/*.ckpt

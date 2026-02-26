@@ -1,0 +1,144 @@
+/* Dialog Title */
+.dialog-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #260f62;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dialog-title-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .close-dialog {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close-dialog:hover {
+    color: #260f62;
+  }
+  
+  /* Dialog Content */
+  .dialog-content {
+    padding: 20px;
+    color: #444;
+  }
+  
+  .product-details-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .product-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .product-price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #260f62;
+  }
+  
+  .product-rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+  }
+  
+  .product-description {
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+  .key-benefits-list {
+    list-style: disc;
+    margin-left: 20px;
+    color: #444;
+  }
+  
+  .additional-info {
+    margin-top: 20px;
+  }
+  
+  .additional-info h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #260f62;
+    margin-bottom: 5px;
+  }
+  
+  .additional-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  /* Dialog Actions */
+  .dialog-actions {
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .add-to-cart-button {
+    background-color: #260f62;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #a443d6;
+  }
+  
+
+/* Alert.css */
+.alert-notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050; /* Ensure it's above other content */
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .css-15fu35s-MuiDialogActions-root button {
+    color:white;
+    font-weight: 600;
+  }
+
+  

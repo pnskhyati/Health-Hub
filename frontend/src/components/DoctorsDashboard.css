@@ -1,0 +1,162 @@
+/* DoctorsDashboard.css */
+.doctor-dashboard {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    color: #260f62;
+    text-align: center;
+  }
+  
+  .profile, .availability, .appointments {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .profile h2, .profile p {
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .availability {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .availability input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .availability button {
+    background-color: #260f62;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .availability button:hover {
+    background-color: #1e0a50;
+  }
+  
+  .appointments ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .appointments li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .appointments li p {
+    margin: 5px 0;
+  }
+  
+  .appointments li button {
+    align-self: flex-start;
+    background-color: #260f62;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .appointments li button:hover {
+    background-color: #1e0a50;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .availability input {
+      width: 100%;
+    }
+  }
+  
+
+  /* Prescription Modal - Hidden by default */
+.prescription-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it sits on top of other content */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  max-width: 900px;
+  width: 90%; /* Ensure responsiveness */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Fade-in effect for smooth transition */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Close button */
+button.close-btn {
+  background-color: #e6e6e6;
+  color: #260f62;
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button.close-btn:hover {
+  background-color: #d1d1d1;
+}
+
+/* Overlay background that appears when the modal is active */
+.prescription-modal.active {
+  display: flex; /* Show the modal when active */
+}

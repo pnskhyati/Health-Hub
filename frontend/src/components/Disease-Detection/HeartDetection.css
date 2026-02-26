@@ -1,0 +1,239 @@
+/* Additional CSS fixes for better error handling and UX */
+
+.error-message {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Changed to space-between */
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.error-close {
+  background: none;
+  border: none;
+  color: #b91c1c;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.error-close:hover {
+  background-color: rgba(185, 28, 28, 0.1);
+}
+
+.upload-section {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.drop-zone {
+  border: 2px dashed #adb5bd;
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop-zone:hover {
+  border-color: #e63946;
+  background-color: rgba(230, 57, 70, 0.05);
+}
+
+.drop-zone.active {
+  border-color: #e63946;
+  background-color: #fff0f3;
+  transform: scale(1.02);
+}
+
+.image-preview {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 2px solid #e9ecef;
+}
+
+.result-image {
+  max-width: 100%;
+  max-height: 500px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.analyze-button {
+  width: 100%;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  min-height: 56px; /* Prevent height jumping */
+}
+
+.analyze-button:disabled {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.analyze-button:hover:not(:disabled) {
+  background-color: #c1121f;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(230, 57, 70, 0.3);
+}
+
+.diagnosis-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-left: 4px solid #e63946;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loading-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  color: #e63946;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .heart-detection-container {
+    padding: 1rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .file-preview {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+  
+  .visualization-tabs {
+    flex-direction: column;
+  }
+  
+  .tab {
+    margin-bottom: 0.5rem;
+  }
+  
+  .drop-zone {
+    padding: 2rem 1rem;
+    min-height: 150px;
+  }
+  
+  .additional-findings li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heart-detection-container {
+    padding: 0.5rem;
+  }
+  
+  .upload-section,
+  .results-section {
+    padding: 1rem;
+  }
+  
+  .header h1 {
+    font-size: 1.75rem;
+  }
+  
+  .diagnosis {
+    font-size: 1.25rem;
+  }
+}
+
+/* Animation for smooth transitions */
+.results-section {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Focus states for accessibility */
+.drop-zone:focus-within {
+  outline: 2px solid #e63946;
+  outline-offset: 2px;
+}
+
+.tab:focus {
+  outline: 2px solid #1d3557;
+  outline-offset: 2px;
+}
+
+button:focus-visible {
+  outline: 2px solid #1d3557;
+  outline-offset: 2px;
+}

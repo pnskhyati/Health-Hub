@@ -1,0 +1,26 @@
+.choice-container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .choice-container h1 {
+    color: #260f62;
+  }
+  
+  .choice-buttons button {
+    margin: 20px;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #260f62;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .choice-buttons button:hover {
+    background-color: #432b8c;
+  }
+  

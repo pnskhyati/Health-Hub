@@ -1,0 +1,62 @@
+/* General container styling */
+.lab-tests-container {
+    padding: 20px;
+    background-color: #f3f3f3;
+   
+  }
+  
+  .lab-tests-title {
+    margin-top: 39px;
+    text-align: center;
+    font-size: 24px;
+    color: #260f62;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Wrapper for horizontal scrolling */
+  .lab-tests-wrapper {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 20px;
+    padding: 10px 0;
+    scroll-behavior: smooth; /* Smooth scrolling for horizontal movement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styling for individual test boxes */
+  .lab-test-box {
+    min-width: 150px; /* Minimum width for the boxes */
+    flex: 0 0 auto; /* Prevents the boxes from shrinking or growing */
+    text-align: center;
+    background-color: white;
+    border: 1px solid #260f62;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .lab-test-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image styling */
+  .lab-test-image {
+    width: 100%;
+    height: 154px;
+    border-radius: 4px;
+  }
+  
+  /* Test name styling */
+  .lab-test-name {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #260f62;
+    font-weight: bold;
+  }
+  

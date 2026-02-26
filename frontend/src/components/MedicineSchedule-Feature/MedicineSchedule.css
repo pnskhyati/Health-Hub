@@ -1,0 +1,156 @@
+/* Overall page styling */
+.medicine-schedule {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #260f62;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #260f62;
+}
+
+/* Schedule form styling */
+.schedule-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.schedule-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.schedule-form input:focus {
+  border-color: #260f62;
+  box-shadow: 0 0 5px rgba(38, 15, 98, 0.5);
+}
+
+/* Button styling */
+button {
+  background-color: #260f62;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #3e1a80;
+}
+
+button:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}
+
+/* Schedule list styling */
+.schedule-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.schedule-list li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule-list li span {
+  font-size: 18px;
+  color: #333;
+}
+
+.schedule-list li input[type="checkbox"] {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.schedule-list li input[type="checkbox"]:checked {
+  background-color: #260f62;
+  border: none;
+}
+
+.schedule-list li input[type="checkbox"]:focus {
+  outline: none;
+}
+
+/* Prescriptions section styling */
+.prescriptions-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.prescriptions-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.prescriptions-list li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.prescriptions-list strong {
+  color: #260f62;
+}
+
+/* Prescription item */
+.prescription-item ul {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.prescription-item li {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Button to view prescriptions */
+.view-prescriptions-btn {
+  margin-top: 20px;
+}
+
+/* Auto-schedule button */
+.auto-schedule-btn {
+  margin-top: 20px;
+  background-color: #3e1a80;
+}
+
+/* Checkbox for each medicine */
+.checked-medicine {
+  text-decoration: line-through;
+  color: #aaa;
+}

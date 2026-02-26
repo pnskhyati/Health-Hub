@@ -1,0 +1,147 @@
+/* Main Container */
+.disease-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  }
+  
+  /* Header Section */
+  .disease-header {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #271968;
+    color: white;
+    box-shadow: 0 4px 12px rgba(39, 25, 104, 0.2);
+  }
+  
+  .disease-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: white;
+  }
+  
+  .disease-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    font-weight: 300;
+    color: wheat;
+  }
+  
+  /* Options Grid */
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  /* Option Cards */
+  .option-card {
+    position: relative;
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(39, 25, 104, 0.1);
+    border: 2px solid transparent;
+    overflow: hidden;
+  }
+  
+  .option-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(39, 25, 104, 0.15);
+  }
+  
+  .option-card.selected {
+    border-color: #271968;
+    background: linear-gradient(145deg, #ffffff 0%, #f3f1ff 100%);
+  }
+  
+  .option-card.selected .select-indicator {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .option-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #271968 0%, #4a36b4 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .option-card:hover::before {
+    opacity: 1;
+  }
+  
+  /* Card Elements */
+  .option-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .option-name {
+    font-size: 1.5rem;
+    color: #271968;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+  
+  .option-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .select-indicator {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    color: #271968;
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+  }
+  
+  /* Footer */
+  .gradient-footer {
+    margin-top: auto;
+    padding: 1.5rem;
+    background: linear-gradient(90deg, #271968 0%, #4a36b4 100%);
+    text-align: center;
+  }
+  
+  .footer-text {
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .options-grid {
+      grid-template-columns: 1fr;
+      padding: 1.5rem;
+    }
+    
+    .disease-title {
+      font-size: 2rem;
+    }
+    
+    .option-card {
+      padding: 1.5rem;
+    }
+  }

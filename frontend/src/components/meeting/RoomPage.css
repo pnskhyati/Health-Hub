@@ -1,0 +1,54 @@
+/* RoomPage.css */
+.room-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #271968; /* Primary background color */
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    color: #ffffff; /* Text color for readability */
+  }
+  
+  .room-video {
+    width: 85%;
+    height: 70%;
+    border: 3px solid #4b42a1; /* Accent border color */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+    background-color: #32246e; /* Slightly lighter shade for the video container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .room-video::after {
+    content: "Loading Video Room..."; /* Placeholder text while content loads */
+    color: #b3b3ff; /* Subtle text color for placeholder */
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .copy-link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .copy-link a {
+    color: #b3b3ff; /* Link color for contrast */
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+  }
+  
+  .copy-link a:hover {
+    color: #f2eaff; /* Lighter hover effect */
+    border-bottom: 2px solid #f2eaff; /* Border on hover */
+  }
+  
+  .tkC3S6XQehKbTEIfFYVM {
+  padding: 86px 86px;
+  border-radius: 23px;
+}

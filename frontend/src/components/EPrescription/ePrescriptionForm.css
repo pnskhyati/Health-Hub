@@ -1,0 +1,233 @@
+/* ePrescription Form Styling */
+.eprescription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 80vh; /* Make sure it doesn't overflow */
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #260f62; /* Customize color */
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #260f62; /* Customize color */
+}
+
+.medicine, .test {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+textarea {
+    height: 120px; /* Adjust height for textarea */
+    padding: 35px 23px;
+}
+
+.button {
+    background-color: #260f62;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 200px; /* Limit max width for buttons */
+    margin: 10px 0;
+    align-self: center;
+}
+
+button:hover {
+    background-color: #3f1367;
+}
+
+button[type="button"] {
+    background-color: #e6e6e6;
+    color: #260f62;
+}
+
+button[type="button"]:hover {
+    background-color: #d1d1d1;
+}
+
+/* Prescriptions List Styles */
+.prescriptions-list {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .prescription-cards {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .prescription-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  .prescription-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .prescription-header h3 {
+    margin: 0;
+    color: #2c3e50;
+  }
+  
+  .prescription-date, .prescription-doctor {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+  }
+  
+  .prescription-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .prescription-section h4 {
+    margin-bottom: 0.75rem;
+    color: #3498db;
+  }
+  
+  /* Medicine Item Styles */
+  .medicine-plan {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .medicine-item {
+    padding: 1rem;
+    background-color: #f5f9fc;
+    border-radius: 6px;
+    border-left: 4px solid #3498db;
+  }
+  
+  .medicine-name-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .medicine-dosage {
+    background-color: #e3f2fd;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #1976d2;
+  }
+  
+  .medicine-details {
+    font-size: 0.9rem;
+  }
+  
+  .duration-info {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .schedule-preview {
+    background-color: white;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+  }
+  
+  .schedule-preview ul {
+    margin: 0.5rem 0 0 1rem;
+    padding: 0;
+  }
+  
+  .schedule-preview li {
+    margin-bottom: 0.25rem;
+  }
+  
+  .medicine-instructions {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #ddd;
+    color: #e74c3c;
+  }
+  
+  /* Test List Styles */
+  .test-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .test-list li {
+    padding: 0.75rem;
+    background-color: #f5f5f5;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .test-instructions {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+    margin-top: 0.25rem;
+  }
+  
+  /* Prescription Notes */
+  .prescription-notes {
+    background-color: #fffde7;
+    padding: 1rem;
+    border-radius: 4px;
+    border-left: 4px solid #fbc02d;
+  }
+  
+  /* Buttons */
+  .remove-prescription-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+  }
+  
+  .remove-prescription-btn:hover {
+    background-color: #c0392b;
+  }

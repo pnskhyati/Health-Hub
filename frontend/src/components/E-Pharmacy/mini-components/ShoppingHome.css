@@ -1,0 +1,251 @@
+.container {
+  max-width: 1140px;
+  position: absolute;
+  left: 0px;
+  margin: 10px 0px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(90deg, #24144f, #271968);
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo wrapper */
+.logoWrapper {
+  display: flex;
+  align-items: center; /* Center logo vertically */
+  justify-content: flex-start; /* Ensure it stays to the left */
+}
+
+/* Logo styling */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Right-side container with location button */
+.part2 {
+  display: flex;
+  align-items: center; /* Center the button vertically */
+  justify-content: flex-end; /* Align button to the right */
+}
+
+/* Button styling */
+/* Location Dropdown Styling */
+.cityDropdown {
+  margin: 6px 14px;
+  width: 170px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(220, 241, 240, 0.8); /* Added transparency with 80% opacity */
+  border-radius: 5px;
+  color: #333;
+  padding: 4px 20px;
+  position: relative;
+  left: 74px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bold{
+  font-weight: 500;
+}
+
+.header .headerSearch{
+  width: 60%;
+  height: 60px;
+  background: #f3f4f7;
+  padding: 10px;
+}
+
+/* Header Search Bar Styling */
+.headerSearch {
+  display: flex; /* Use flex to align the input and button side by side */
+  align-items: center; /* Vertically center the input and button */
+  background: #f3f4f7;
+  padding: 5px 10px;
+  border-radius: 4px;
+  width: 60%;
+  height: auto; /* Let height adjust automatically */
+  margin: 0 69px;
+}
+
+.headerSearch input {
+  flex: 1; /* Allow the input to take up available space */
+  border: none;
+  border-radius: 4px;
+  outline: none !important;
+  font-size: 16px;
+  color: black;
+  padding: 8px 12px;
+  width: 279px;
+}
+
+.headerSearch button {
+  background: none;
+  border: none;
+  color: #333; /* Use consistent color for the icon */
+  cursor: pointer;
+  padding: 8px;
+}
+
+
+/* Container for Bag and User Icons */
+.part3 {
+  display: flex; /* Use flexbox to align the icons horizontally */
+  align-items: center; /* Vertically center the icons */
+  gap: 20px; /* Add space between the icons */
+}
+
+/* Container for Bag, Price, and User Icons */
+.part3 {
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Vertically center the icons */
+  gap: 20px; /* Add space between bag and user icons */
+}
+
+.cartTab {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center;
+}
+
+/* Price Styling */
+.price {
+  font-size: 16px; /* Adjust font size */
+  color: white; /* Make the price white to match the icons */
+  margin-right: 8px; /* Add space between the price and the bag icon */
+  width: 70px;
+}
+
+/* Bag and User Icon Button Styling */
+.circle {
+  display: flex; /* Center content inside the button */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 45px; /* Keep consistent size */
+  width: 45px; /* Keep consistent size */
+  border-radius: 50%; /* Make it circular */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle white border */
+  color: black; /* Make the icons white */
+  background: none; /* No background color */
+  cursor: pointer;
+  background-color: white;
+}
+
+.bagBackground {
+  background-color: #f7e0dd;;
+}
+
+/* Icon Styling for Consistent Sizing */
+.bag svg {
+  width: 20px; /* Adjust width of icons */
+  height: 20px; /* Adjust height of icons */
+  color: red;
+}
+.profile svg {
+  width: 20px; /* Adjust width of icons */
+  height: 20px; /* Adjust height of icons */
+ 
+}
+
+.count{
+  position: absolute;
+  top: -6px;
+  right: -4px;
+  background-color: #ea2b0f;
+  border-radius: 50%;
+  color: white;
+  width: 20px;
+  height: 20px;
+}
+
+
+.list-element:Hover {
+  color: #0bbad2;
+  text-decoration: none;
+}
+
+.list-element svg {
+  position: relative;
+    top: -2px;
+}
+
+.locationModel .MuiPaper-elevation{
+  padding: 25px;
+
+}
+
+ .cityList {
+  margin-bottom: 0px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 290px;
+  margin: 0px 69px;
+}
+.cityList li {
+  width: 100%;
+  list-style: none;
+  justify-content: flex-start;
+}
+.cityList li button{
+  width: 100%;
+  text-transform: capitalize !important;
+  color: black;
+  justify-content: flex-start !important;
+  padding: 4px 0px !important;
+  background: #fcfcfc;
+}
+
+
+@media (min-width:1300px)
+{
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1200px;
+  }
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+  
+}
+::-webkit-scrollbar-thumb{
+ background: #ccc;
+
+}
+
+.close_{
+  position: relative;
+  top: -151px;
+  left: 458px;
+  width: 23px;
+  height: 23px;
+  color: #141414;
+  background: white;
+
+}
+
+.close_ svg {
+  width: 23px;
+  height: 23px;
+}

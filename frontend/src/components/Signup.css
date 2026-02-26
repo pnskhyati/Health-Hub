@@ -1,0 +1,83 @@
+
+  
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 137px auto;
+  }
+  
+  .signup-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  h2 {
+    color: #271968;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: bold;
+    color: #271968;
+    margin-bottom: 8px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #271968;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: #ff6b6b; /* A subtle red for focus effect */
+  }
+  
+  .signup-btn {
+    background-color: #271968; /* Deep purple */
+    color: #fff;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    background-color: #5d2981; /* A lighter shade of purple for hover */
+  }
+  
+  .signup-box p {
+    color: #888;
+    margin-top: 20px;
+  }
+  
+  .signup-box p a {
+    color: #271968;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-box p a:hover {
+    text-decoration: underline;
+  }
+  
